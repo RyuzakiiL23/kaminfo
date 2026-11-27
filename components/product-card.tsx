@@ -23,10 +23,10 @@ export function ProductCard({ showDiscount = false }: ProductCardProps) {
 
         <div className="flex flex-col gap-1">
           <div className="flex items-center justify-between gap-2">
-            <span className="text-xs font-medium text-primary">Brand</span>
-            <Badge variant="secondary">In stock</Badge>
+            <span className="text-xs font-semibold text-primary">Brand</span>
+            <Badge variant="secondary" className="bg-green-100 text-success font-semibold">En stock</Badge>
           </div>
-          <h3 className="font-semibold">Product name placeholder</h3>
+          <h3 className="font-bold hover:text-primary transition-all duration-300">Product name placeholder</h3>
           <p className="text-sm text-muted-foreground">Spec one • Spec two • Spec three</p>
         </div>
       </div>
@@ -40,9 +40,9 @@ export function ProductCard({ showDiscount = false }: ProductCardProps) {
           )}
           <span className="text-lg font-bold tabular-nums">00 000 DH</span>
         </div>
-        <Button size="sm">
+        <Button className='py-5 px-4 rounded-md cursor-pointer hover:bg-ring'>
           <MdAddShoppingCart className="size-[18px]" aria-hidden />
-          Add
+          Ajouter
         </Button>
       </footer>
     </Card>
