@@ -1,7 +1,5 @@
 import {
   MdSearch,
-  MdPerson,
-  MdShoppingCart,
   MdStorefront,
   MdOutlineShoppingCart,
 } from "react-icons/md";

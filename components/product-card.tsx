@@ -9,7 +9,7 @@ type ProductCardProps = {
 
 export function ProductCard({ showDiscount = false }: ProductCardProps) {
   return (
-    <Card className="h-full justify-between gap-4 p-4 transition-colors hover:border-primary">
+    <Card className="h-full justify-between gap-4 p-4 transition-colors border-muted cursor-pointer hover:border-blue-400 border">
       <div className="flex flex-col gap-3">
         {/* Image placeholder */}
         <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-md bg-muted text-muted-foreground">

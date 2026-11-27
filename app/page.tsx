@@ -15,10 +15,10 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Categories />
-        <ProductSection title="Best sellers" linkLabel="View all" />
+        <ProductSection title="Meilleures ventes PC Portables" linkLabel="Voir tous les laptops" />
         <Offers />
-        <ProductSection title="Gaming & components" linkLabel="Explore gaming" />
-        <ProductSection title="Accessories & peripherals" linkLabel="All accessories" />
+      <ProductSection title="Gaming & components" linkLabel="Explorer le Gaming" />
+        <ProductSection title="Accessories & peripherals" linkLabel="Tous les accessoires" />
         <Trust />
       </main>
       <Footer />

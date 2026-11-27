@@ -22,7 +22,7 @@ export function ProductSection({
     <section className="mx-auto max-w-7xl px-6 pb-12">
       <div className="mb-5 flex items-center justify-between">
         <h2 className="text-2xl font-bold tracking-tight">{title}</h2>
-        <Button variant="link" className="gap-1 px-0">
+        <Button variant="link" className="gap-1 px-0 font-semibold cursor-pointer">
           {linkLabel}
           <MdChevronRight className="size-[18px]" aria-hidden />
         </Button>

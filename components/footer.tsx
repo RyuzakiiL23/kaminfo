@@ -1,5 +1,6 @@
 import { MdMemory, MdPhotoCamera, MdPlayArrow, MdChat } from "react-icons/md";
 import type { IconType } from "react-icons";
+import Image from "next/image";
 
 const SOCIALS: { label: string; Icon: IconType }[] = [
   { label: "Instagram", Icon: MdPhotoCamera },
@@ -9,18 +10,29 @@ const SOCIALS: { label: string; Icon: IconType }[] = [
 
 export function Footer() {
   return (
-    <footer className="border-t bg-primary text-primary-foreground">
+    <footer className="border-t bg-foreground text-primary-foreground">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-12 md:grid-cols-4">
         {/* Brand */}
         <div className="flex flex-col gap-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="flex size-8 items-center justify-center rounded-md bg-primary-foreground text-primary">
-              <MdMemory className="size-5" aria-hidden />
+              <div className="flex relative bg-background h-10 w-10 shrink-0 items-center justify-center rounded-md text-sm font-semibold text-muted-foreground">
+                <Image
+                  src="/images/nbg-logo.png"
+                  alt="Image"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
-            <span className="text-lg font-bold">Brand Name</span>
+            <div>
+              <span className="text-lg font-semibold text-gray-400">KAM</span>
+              <span className="text-lg font-semibold text-blue-400">INFO</span>
+            </div>
           </div>
           <p className="text-sm opacity-80">
-            Short brand description placeholder. One or two sentences about the store.
+            Short brand description placeholder. One or two sentences about the
+            store.
           </p>
         </div>
 
@@ -57,12 +69,16 @@ export function Footer() {
               </span>
             ))}
           </div>
-          <span className="text-xs opacity-80">Payment methods placeholder</span>
+          <span className="text-xs opacity-80">
+            Payment methods placeholder
+          </span>
         </div>
       </div>
 
       <div className="border-t border-primary-foreground/20 py-4 text-center">
-        <p className="text-xs opacity-80">© 2026 Brand Name. All rights reserved.</p>
+        <p className="text-xs opacity-80">
+          © 2026 Brand Name. All rights reserved.
+        </p>
       </div>
     </footer>
   );
